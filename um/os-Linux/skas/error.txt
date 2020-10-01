@@ -1,0 +1,9 @@
+arch/um/os-Linux/skas/process.c: In function ‘userspace’:
+arch/um/os-Linux/skas/process.c:368:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  extern int dvk_fd;
+  ^~~~~~
+In file included from ./include/linux/utsname.h:5:0,
+                 from init/version.c:12:
+./include/linux/sched.h:1951:10: note: #pragma message: USE_TASK_MUTEX
+  #pragma message ("USE_TASK_MUTEX")
+          ^~~~~~~

@@ -1,0 +1,55 @@
+arch/um/os-Linux/skas/process.c: In function ‘handle_dvk_enter’:
+arch/um/os-Linux/skas/process.c:397:54: error: ‘ORIG_RAX’ undeclared (first use in this function)
+  syscall = ptrace(PTRACE_PEEKUSER, pid, sizeof(long)*ORIG_RAX, 0)
+                                                      ^~~~~~~~
+arch/um/os-Linux/skas/process.c:397:54: note: each undeclared identifier is reported only once for each function it appears in
+arch/um/os-Linux/skas/process.c:398:3: error: expected ‘;’ before ‘if’
+   if( syscall == __NR_ioctl){  // DETECT IOCTL //////////////////////////
+   ^~
+arch/um/os-Linux/skas/process.c:392:6: warning: unused variable ‘count’ [-Wunused-variable]
+  int count;
+      ^~~~~
+arch/um/os-Linux/skas/process.c:391:8: warning: unused variable ‘args’ [-Wunused-variable]
+  void *args;
+        ^~~~
+arch/um/os-Linux/skas/process.c:390:9: warning: unused variable ‘open_mode’ [-Wunused-variable]
+  mode_t open_mode;
+         ^~~~~~~~~
+arch/um/os-Linux/skas/process.c:389:6: warning: unused variable ‘open_flags’ [-Wunused-variable]
+  int open_flags;
+      ^~~~~~~~~~
+arch/um/os-Linux/skas/process.c:388:8: warning: unused variable ‘tmp_path’ [-Wunused-variable]
+  char *tmp_path = "/dev/xxxxxxxxx";
+        ^~~~~~~~
+arch/um/os-Linux/skas/process.c:387:8: warning: unused variable ‘open_path’ [-Wunused-variable]
+  char *open_path;
+        ^~~~~~~~~
+arch/um/os-Linux/skas/process.c:386:21: warning: unused variable ‘rcode’ [-Wunused-variable]
+  int lpid, fd, cmd, rcode;
+                     ^~~~~
+arch/um/os-Linux/skas/process.c:386:16: warning: unused variable ‘cmd’ [-Wunused-variable]
+  int lpid, fd, cmd, rcode;
+                ^~~
+arch/um/os-Linux/skas/process.c:386:12: warning: unused variable ‘fd’ [-Wunused-variable]
+  int lpid, fd, cmd, rcode;
+            ^~
+arch/um/os-Linux/skas/process.c:386:6: warning: unused variable ‘lpid’ [-Wunused-variable]
+  int lpid, fd, cmd, rcode;
+      ^~~~
+arch/um/os-Linux/skas/process.c:385:13: warning: unused variable ‘dvk_fd’ [-Wunused-variable]
+  extern int dvk_fd;
+             ^~~~~~
+arch/um/os-Linux/skas/process.c: In function ‘userspace’:
+arch/um/os-Linux/skas/process.c:509:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   extern int dvk_fd;
+   ^~~~~~
+arch/um/os-Linux/skas/process.c:509:14: warning: unused variable ‘dvk_fd’ [-Wunused-variable]
+   extern int dvk_fd;
+              ^~~~~~
+arch/um/os-Linux/skas/process.c: In function ‘handle_dvk_enter’:
+arch/um/os-Linux/skas/process.c:447:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make[2]: *** [arch/um/os-Linux/skas/process.o] Error 1
+make[1]: *** [arch/um/os-Linux/skas] Error 2
+make: *** [arch/um/os-Linux] Error 2

@@ -1,0 +1,66 @@
+In file included from arch/um/os-Linux/skas/process.c:56:0:
+/usr/src/dvs/dvk-mod/dvk_debug.h:49:5: warning: "DVKPROFILING" is not defined [-Wundef]
+ #if DVKPROFILING != 0
+     ^~~~~~~~~~~~
+/usr/src/dvs/dvk-mod/dvk_debug.h:55:5: warning: "DVKPROFILING" is not defined [-Wundef]
+ #if DVKPROFILING != 0
+     ^~~~~~~~~~~~
+/usr/src/dvs/dvk-mod/dvk_debug.h:61:5: warning: "DVKPROFILING" is not defined [-Wundef]
+ #if DVKPROFILING != 0
+     ^~~~~~~~~~~~
+/usr/src/dvs/dvk-mod/dvk_debug.h:67:5: warning: "DVKPROFILING" is not defined [-Wundef]
+ #if DVKPROFILING != 0
+     ^~~~~~~~~~~~
+arch/um/os-Linux/skas/process.c: In function ‘handle_dvk_wait’:
+arch/um/os-Linux/skas/process.c:379:13: warning: unused variable ‘sptr’ [-Wunused-variable]
+  siginfo_t *sptr;
+             ^~~~
+arch/um/os-Linux/skas/process.c:378:12: warning: unused variable ‘si’ [-Wunused-variable]
+  siginfo_t si;
+            ^~
+arch/um/os-Linux/skas/process.c:377:19: warning: unused variable ‘dvk_retcode’ [-Wunused-variable]
+  int err, status, dvk_retcode;
+                   ^~~~~~~~~~~
+arch/um/os-Linux/skas/process.c:377:11: warning: unused variable ‘status’ [-Wunused-variable]
+  int err, status, dvk_retcode;
+           ^~~~~~
+arch/um/os-Linux/skas/process.c: In function ‘handle_dvk_enter’:
+arch/um/os-Linux/skas/process.c:575:9: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   args  = UPT_SYSCALL_ARG3(r);
+         ^
+arch/um/os-Linux/skas/process.c:582:73: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘void *’ [-Wformat=]
+    printk("DVK handle_dvk_enter DVK_IOCQGETEP BEFORE fd=%d cmd=%X args=%d\n", fd, cmd, args);
+                                                                         ^
+arch/um/os-Linux/skas/process.c:585:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    args  = UPT_SYSCALL_ARG3(r);
+          ^
+arch/um/os-Linux/skas/process.c:586:73: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘void *’ [-Wformat=]
+    printk("DVK handle_dvk_enter DVK_IOCQGETEP AFTER  fd=%d cmd=%X args=%d\n", fd, cmd, args);
+                                                                         ^
+arch/um/os-Linux/skas/process.c:593:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    args  = UPT_SYSCALL_ARG3(r);
+          ^
+arch/um/os-Linux/skas/process.c:557:21: warning: unused variable ‘rcode’ [-Wunused-variable]
+  int lpid, fd, cmd, rcode, tmp_pid, tmp_cmd;
+                     ^~~~~
+arch/um/os-Linux/skas/process.c:556:13: warning: unused variable ‘dvk_fd’ [-Wunused-variable]
+  extern int dvk_fd;
+             ^~~~~~
+arch/um/os-Linux/skas/process.c: In function ‘userspace’:
+arch/um/os-Linux/skas/process.c:722:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   extern int dvk_fd;
+   ^~~~~~
+arch/um/os-Linux/skas/process.c:723:18: warning: unused variable ‘err’ [-Wunused-variable]
+   int sg, rcode, err;
+                  ^~~
+arch/um/os-Linux/skas/process.c:722:14: warning: unused variable ‘dvk_fd’ [-Wunused-variable]
+   extern int dvk_fd;
+              ^~~~~~
+arch/um/os-Linux/skas/process.c:698:1: warning: label ‘userspace_loop’ defined but not used [-Wunused-label]
+ userspace_loop:
+ ^~~~~~~~~~~~~~
+In file included from ./include/linux/utsname.h:5:0,
+                 from init/version.c:12:
+./include/linux/sched.h:1951:10: note: #pragma message: USE_TASK_MUTEX
+  #pragma message ("USE_TASK_MUTEX")
+          ^~~~~~~

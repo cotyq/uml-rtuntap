@@ -1,0 +1,38 @@
+arch/um/os-Linux/skas/process.c: In function ‘handle_trap’:
+arch/um/os-Linux/skas/process.c:142:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  extern int dvk_fd;
+  ^~~~~~
+arch/um/os-Linux/skas/process.c:145:2: error: ‘user’ undeclared (first use in this function)
+  user =  UPT_IS_USER(regs);
+  ^~~~
+arch/um/os-Linux/skas/process.c:145:2: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ./arch/um/include/shared/as-layout.h:38:0,
+                 from arch/um/os-Linux/skas/process.c:15:
+arch/um/os-Linux/skas/process.c:149:26: error: ‘r’ undeclared (first use in this function)
+    fd = UPT_SYSCALL_ARG1(r);
+                          ^
+./arch/x86/um/shared/sysdep/ptrace.h:14:22: note: in definition of macro ‘REGS_BX’
+ #define REGS_BX(r) ((r)[HOST_BX])
+                      ^
+./arch/x86/um/shared/sysdep/ptrace_32.h:27:29: note: in expansion of macro ‘UPT_BX’
+ #define UPT_SYSCALL_ARG1(r) UPT_BX(r)
+                             ^~~~~~
+arch/um/os-Linux/skas/process.c:149:9: note: in expansion of macro ‘UPT_SYSCALL_ARG1’
+    fd = UPT_SYSCALL_ARG1(r);
+         ^~~~~~~~~~~~~~~~
+arch/um/os-Linux/skas/process.c:159:6: error: expected expression before ‘if’
+  if( if 0) {
+      ^~
+arch/um/os-Linux/skas/process.c:160:22: error: expected ‘)’ before ‘handle_trap’
+   printk("DVK N_ERR "handle_trap - nullifying syscall "
+                      ^~~~~~~~~~~
+arch/um/os-Linux/skas/process.c:160:55: warning: missing terminating " character
+   printk("DVK N_ERR "handle_trap - nullifying syscall "
+                                                       ^
+arch/um/os-Linux/skas/process.c:160:55: error: missing terminating " character
+arch/um/os-Linux/skas/process.c:162:2: error: expected ‘;’ before ‘}’ token
+  }
+  ^
+make[2]: *** [arch/um/os-Linux/skas/process.o] Error 1
+make[1]: *** [arch/um/os-Linux/skas] Error 2
+make: *** [arch/um/os-Linux] Error 2

@@ -1,0 +1,7 @@
+um/kernel/config.c
+um/kernel/config.tmp
+um/kernel/vmlinux.lds
+*.o
+*.o.cmd
+*.taz.gz
+

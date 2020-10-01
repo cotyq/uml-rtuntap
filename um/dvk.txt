@@ -1,0 +1,129 @@
+drivers/um_dvk.h:#include "/usr/src/dvs/include/com/dvk_calls.h"
+drivers/um_dvk.h:#include "/usr/src/dvs/include/com/dvk_ioctl.h"
+drivers/um_dvk.h:#include "/usr/src/dvs/include/dvk/dvk_ioparm.h"
+drivers/um_dvk.h:#include "/usr/src/dvs/dvk-mod/dvk_debug.h"
+drivers/um_dvk.h:#include "/usr/src/dvs/dvk-mod/dvk_macros.h"
+drivers/glo_dvk.h:extern int  dvk_fd; 
+drivers/glo_dvk.h:char *dvk_dev = UML_DVK_DEV;
+drivers/glo_dvk.h:extern char *dvk_dev;
+drivers/rdisk_kern.c:	rcode = dvk_sendrec_T(rd_ep, m_ptr, TIMEOUT_MOLCALL);
+drivers/rdisk_kern.c:	my_ep = dvk_getep(tid);
+drivers/rdisk_kern.c:	rcode = dvk_sendrec_T(rd_ep, m_ptr, TIMEOUT_MOLCALL);
+drivers/rdisk_kern.c:	rcode = dvk_sendrec_T(rd_ep, m_ptr, TIMEOUT_MOLCALL);
+drivers/rdisk_kern.c:	rcode = dvk_open();
+drivers/rdisk_kern.c:	rdisk_nodeid = dvk_getdvsinfo(dvsu_ptr);
+drivers/rdisk_kern.c:	local_nodeid = dvk_getdvsinfo(dvsu_ptr);
+drivers/rdisk_kern.c:	rcode = dvk_getdcinfo(dcid, dcu_ptr);
+drivers/rdisk_kern.c:		rdc_ep = dvk_tbind(dcid, i);
+drivers/rdisk_kern.c:	rcode = dvk_getprocinfo(dcid, rdc_ep, proc_ptr);
+drivers/um_dvk.c:module_param(dvk_dev, charp, 0644);
+drivers/um_dvk.c:MODULE_PARM_DESC(dvk_dev, DVK_HELP);
+drivers/um_dvk.c:	dvk_dev = name;
+drivers/um_dvk.c:__uml_setup("dvk_dev=", set_dvk, "dvk_dev=<dvk_device>\n" DVK_HELP);
+drivers/um_dvk.c:static DEFINE_MUTEX(uml_dvk_mutex);
+drivers/um_dvk.c:static long uml_dvk_ioctl(struct file *file,
+drivers/um_dvk.c:static int uml_dvk_open(struct inode *inode, struct file *file)
+drivers/um_dvk.c:	mutex_lock(&uml_dvk_mutex);
+drivers/um_dvk.c:	DVKDEBUG(DBGPARAMS,"dvk_dev=%s\n",dvk_dev);
+drivers/um_dvk.c:	mutex_unlock(&uml_dvk_mutex);
+drivers/um_dvk.c:static int uml_dvk_release(struct inode *inode, struct file *file)
+drivers/um_dvk.c:	DVKDEBUG(DBGPARAMS,"dvk_dev=%s\n",dvk_dev);
+drivers/um_dvk.c:static const struct file_operations uml_dvk_fops = {
+drivers/um_dvk.c:	.unlocked_ioctl	= uml_dvk_ioctl,
+drivers/um_dvk.c:	.open           = uml_dvk_open,
+drivers/um_dvk.c:	.release        = uml_dvk_release,
+drivers/um_dvk.c:static int __init uml_dvk_init_module(void)
+drivers/um_dvk.c:	printk("UML Distributed Virtualization Kernel (host dvk_dev = %s)\n",dvk_dev);
+drivers/um_dvk.c:	DVKDEBUG(INTERNAL, "UML Distributed Virtualization Kernel (host dvk_dev = %s)\n",dvk_dev);
+drivers/um_dvk.c:	module_dvk = register_chrdev(DVK_MAJOR, DEVICE_NAME, &uml_dvk_fops);
+drivers/um_dvk.c:static void __exit uml_dvk_cleanup_module (void)
+drivers/um_dvk.c:module_init(uml_dvk_init_module);
+drivers/um_dvk.c:module_exit(uml_dvk_cleanup_module);
+include/shared/skas/mm_id.h:	int  mm_dvk_fd;
+kernel/skas/syscall.c:#include "/usr/src/dvs/include/com/dvk_calls.h"
+kernel/skas/syscall.c:#include "/usr/src/dvs/include/com/dvk_ioctl.h"
+kernel/skas/syscall.c:extern int dvk_fd; 
+kernel/skas/syscall.c:		if( dvk_fd >= 0) {
+kernel/skas/syscall.c:			if( dvk_fd ==  UPT_SYSCALL_ARG1(r) ) {
+kernel/skas/syscall.c:				printk("UML DVK CALL pid=%d dvk_fd=%d cmd=%X\n", pid, dvk_fd, cmd);
+kernel/skas/syscall.c:				rcode = stub_syscall3(__NR_ioctl , dvk_fd, cmd,  arg );
+kernel/skas/syscall.c:void return_from_dvkcall(int dvk_retcode,  struct uml_pt_regs *r)
+kernel/skas/syscall.c:	PT_REGS_SET_SYSCALL_RETURN(regs, dvk_retcode);
+kernel/skas/error.txt:  extern int dvk_fd;
+kernel/skas/clone.c:static	int stub_dvk_fd = (-1);
+kernel/skas/clone.c:		data->fd = &stub_dvk_fd;
+kernel/skas/clone.c:	stub_dvk_fd = stub_syscall2(__NR_open, DVK_FILE_NAME, 0);
+kernel/skas/process.c:#include "/usr/src/dvs/include/com/dvk_calls.h"
+kernel/skas/process.c:#include "/usr/src/dvs/include/com/dvk_ioctl.h"
+kernel/skas/process.c:#include "/usr/src/dvs/include/dvk/dvk_ioparm.h"
+kernel/skas/process.c:extern int dvk_fd;
+kernel/skas/process.c:	ret = os_ioctl_generic(dvk_fd,DVK_IOCGGETDVSINFO, (int) dvsu_ptr);
+kernel/skas/process.c:	ret = os_ioctl_generic(dvk_fd,DVK_IOCSDVKBIND, (int) &parm);
+kernel/skas/process.c:	dvk_fd = (-1);
+kernel/skas/process.c:	dvk_fd = os_open_file(UML_DVK_DEV, of_set_rw(OPENFLAGS(), 1, 1), 0);
+kernel/skas/process.c:	if ( dvk_fd < 0){
+kernel/skas/process.c:		ERROR_PRINT(dvk_fd);
+kernel/skas/process.c:		UMLDEBUG("DVK device file successfully opened!! dvk_fd=%d\n", dvk_fd);
+kernel/skas/process.c://		printf("DVK device file successfully opened!! dvk_fd=%d\n", dvk_fd);
+os-Linux/skas/error.txt:  extern int dvk_fd;
+os-Linux/skas/dvk.c:int do_stub_open(struct mm_id *mm_idp, char *dvk_dev, int open_flags, mode_t open_mode)
+os-Linux/skas/dvk.c:	printk("do_stub_open: dvk_dev = %s\n", dvk_dev);
+os-Linux/skas/dvk.c:				dvk_dev, 
+os-Linux/skas/process.c:#include "/usr/src/dvs/include/com/dvk_calls.h"
+os-Linux/skas/process.c:#include "/usr/src/dvs/include/com/dvk_ioctl.h"
+os-Linux/skas/process.c:#include "/usr/src/dvs/include/dvk/dvk_ioparm.h"
+os-Linux/skas/process.c:#include "/usr/src/dvs/dvk-mod/dvk_debug.h"
+os-Linux/skas/process.c:#include "/usr/src/dvs/dvk-mod/dvk_macros.h"
+os-Linux/skas/process.c:void return_from_dvkcall(int dvk_retcode,  struct uml_pt_regs *r);
+os-Linux/skas/process.c:static void handle_dvk_wait(int pid, struct uml_pt_regs *regs)
+os-Linux/skas/process.c:	int err, status, dvk_retcode;
+os-Linux/skas/process.c:	printk("DVK handle_dvk_wait pid=%d\n", pid);
+os-Linux/skas/process.c:		printk(UM_KERN_ERR "handle_dvk_wait - PTRACE_GETSIGMASK failed, errno = %d\n", errno);
+os-Linux/skas/process.c:		printk(UM_KERN_ERR "handle_dvk_wait - sigaddset failed, errno = %d\n", errno);
+os-Linux/skas/process.c:		printk(UM_KERN_ERR "handle_dvk_wait - PTRACE_SETSIGMASK failed, errno = %d\n", errno);
+os-Linux/skas/process.c:		printk(UM_KERN_ERR "handle_dvk_wait - continuing to end of "
+os-Linux/skas/process.c:		printk(UM_KERN_ERR "handle_dvk_wait - failed to wait at "
+os-Linux/skas/process.c:	// return_from_dvkcall(dvk_retcode, regs);
+os-Linux/skas/process.c:static void handle_dvk_exit(int pid, struct uml_pt_regs *regs)
+os-Linux/skas/process.c:	int err, status, dvk_retcode;
+os-Linux/skas/process.c:	printk("DVK handle_dvk_exit pid=%d\n", pid);
+os-Linux/skas/process.c:		printk(UM_KERN_ERR "handle_dvk_exit - continuing to end of "
+os-Linux/skas/process.c:    dvk_retcode = ptrace(PTRACE_PEEKUSER, pid, SC_RETCODE, NULL);
+os-Linux/skas/process.c:	if( dvk_retcode == (-ENOSYS))
+os-Linux/skas/process.c:		printk("handle_dvk_exit WARNING dvk_retcode=%d == -ENOSYS\n", dvk_retcode);
+os-Linux/skas/process.c:		printk("handle_dvk_exit dvk_retcode=%d\n", dvk_retcode);
+os-Linux/skas/process.c:			printk(UM_KERN_ERR "handle_dvk_exit Failed to get registers "
+os-Linux/skas/process.c:		printk(UM_KERN_ERR "handle_dvk_exit - failed to wait at "
+os-Linux/skas/process.c:	if( dvk_retcode == (-ERESTARTSYS)){
+os-Linux/skas/process.c:			printk(UM_KERN_ERR "handle_dvk_exit Failed to get signal info err=%d\n", err);
+os-Linux/skas/process.c:	return_from_dvkcall(dvk_retcode, regs);
+os-Linux/skas/process.c:int dvk_call_wait[] = {
+os-Linux/skas/process.c:int handle_dvk_enter(int pid, struct uml_pt_regs *r)
+os-Linux/skas/process.c:	extern int dvk_fd; 
+os-Linux/skas/process.c:	int dvk_call;
+os-Linux/skas/process.c:			printk("DVK handle_dvk_enter DVK_IOCQGETEP BEFORE fd=%d cmd=%X args=%d\n", fd, cmd, args);		
+os-Linux/skas/process.c:			printk("DVK handle_dvk_enter DVK_IOCQGETEP AFTER  fd=%d cmd=%X args=%d\n", fd, cmd, args);
+os-Linux/skas/process.c:				printk("DVK handle_dvk_enter DVK_IOCQGETEP PTRACE_SETREGS errno=%d\n", errno);			
+os-Linux/skas/process.c:			printk("DVK handle_dvk_enter bind parm_cmd=%d\n",tmp_pid);
+os-Linux/skas/process.c:			printk("DVK handle_dvk_enter bind parm_dcid=%d\n",tmp_pid);
+os-Linux/skas/process.c:			printk("DVK handle_dvk_enter bind parm_pid=%d\n",tmp_pid);
+os-Linux/skas/process.c:			printk("DVK handle_dvk_enter bind parm_ep=%d\n",tmp_pid);
+os-Linux/skas/process.c:			printk("DVK handle_dvk_enter bind parm_nodeid=%d\n",tmp_pid);	
+os-Linux/skas/process.c:				printk("DVK handle_dvk_enter DVK_IOCSDVKBIND BEFORE fd=%d cmd=%X pid=%d\n", fd, cmd, tmp_pid);
+os-Linux/skas/process.c:				printk("DVK handle_dvk_enter DVK_IOCSDVKBIND AFTER  fd=%d cmd=%X pid=%d\n", fd, cmd, tmp_pid);
+os-Linux/skas/process.c:				printk("DVK handle_dvk_enter DVK_IOCSDVKBIND PTRACE_SETREGS errno=%d\n", errno);			
+os-Linux/skas/process.c:			dvk_call = _IOC_NR(cmd);
+os-Linux/skas/process.c:			printk("DVK handle_dvk_enter __NR_ioctl fd=%d cmd=%X lpid=%d dvk_call=%d wait=%d\n", 
+os-Linux/skas/process.c:				fd, cmd, lpid, dvk_call, dvk_call_wait[dvk_call]);
+os-Linux/skas/process.c:			return(dvk_call_wait[dvk_call]);
+os-Linux/skas/process.c:	//			printk("DVK handle_dvk_enter __NR_open tmp_path=[%s] UML_DVK_DEV=[%s]\n", tmp_path, UML_DVK_DEV);
+os-Linux/skas/process.c:					printk("DVK handle_dvk_enter MATCH __NR_open tracee_lpid=%d tracer_lpid=%d tmp_path=%s flags=%X mode=%X\n", 
+os-Linux/skas/process.c:		extern int dvk_fd; 
+os-Linux/skas/process.c:		int dvk_retcode;
+os-Linux/skas/process.c:				dvk_retcode = ptrace(PTRACE_PEEKUSER, pid, SC_RETCODE, NULL);
+os-Linux/skas/process.c:				if( dvk_retcode != (-ENOSYS))
+os-Linux/skas/process.c:					printk("userspace WARNING dvk_retcode=%d != -ENOSYS\n", dvk_retcode);
+os-Linux/skas/process.c:				rcode = handle_dvk_enter(pid, regs);
+os-Linux/skas/process.c:					handle_dvk_exit( pid, regs);
+os-Linux/skas/process.c:					handle_dvk_wait( pid, regs);
+os-Linux/skas/process.c:					handle_dvk_exit( pid, regs);

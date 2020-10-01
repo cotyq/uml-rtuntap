@@ -1,0 +1,645 @@
+In file included from ./include/linux/kasan.h:4:0,
+                 from ./include/linux/slab.h:118,
+                 from arch/um/drivers/um_dvk.c:8:
+./include/linux/sched.h:1951:10: note: #pragma message: USE_TASK_MUTEX
+  #pragma message ("USE_TASK_MUTEX")
+          ^~~~~~~
+In file included from arch/um/drivers/um_dvk.h:25:0,
+                 from arch/um/drivers/um_dvk.c:21:
+/usr/src/dvs/dvk-mod/dvk_debug.h:49:5: warning: "DVKPROFILING" is not defined [-Wundef]
+ #if DVKPROFILING != 0
+     ^~~~~~~~~~~~
+/usr/src/dvs/dvk-mod/dvk_debug.h:55:5: warning: "DVKPROFILING" is not defined [-Wundef]
+ #if DVKPROFILING != 0
+     ^~~~~~~~~~~~
+/usr/src/dvs/dvk-mod/dvk_debug.h:61:5: warning: "DVKPROFILING" is not defined [-Wundef]
+ #if DVKPROFILING != 0
+     ^~~~~~~~~~~~
+/usr/src/dvs/dvk-mod/dvk_debug.h:67:5: warning: "DVKPROFILING" is not defined [-Wundef]
+ #if DVKPROFILING != 0
+     ^~~~~~~~~~~~
+In file included from /usr/src/dvs/dvk-lib/stub_dvkcall.c:53:0,
+                 from arch/um/drivers/um_dvk.c:23:
+/usr/src/dvs/dvk-lib/stub_debug.h:35:0: warning: "ERROR_RETURN" redefined
+ #define ERROR_RETURN(rcode) \
+ 
+In file included from arch/um/drivers/um_dvk.h:29:0,
+                 from arch/um/drivers/um_dvk.c:21:
+arch/um/drivers/../include/uml_macros.h:13:0: note: this is the location of the previous definition
+ #define ERROR_RETURN(rcode) \
+ 
+In file included from /usr/src/dvs/dvk-lib/stub_dvkcall.c:53:0,
+                 from arch/um/drivers/um_dvk.c:23:
+/usr/src/dvs/dvk-lib/stub_debug.h:52:0: warning: "LIBDEBUG" redefined
+ #define LIBDEBUG(dbglvl, text, args ...) \
+ 
+/usr/src/dvs/dvk-lib/stub_debug.h:31:0: note: this is the location of the previous definition
+ #define LIBDEBUG DVKDEBUG
+ 
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_vcopy’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:94:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:96:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_dvs_end’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:112:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:114:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_dc_init’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:130:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:132:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_dc_end’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:148:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:150:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_getep’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:166:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:168:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_getdvsinfo’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:184:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:186:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_proxies_unbind’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:202:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:204:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_node_down’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:220:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:222:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_rcvrqst_T’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:243:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:245:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_getdcinfo’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:264:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:266:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_getnodeinfo’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:285:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:287:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_relay’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:306:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:308:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_wakeup’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:327:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:329:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_put2lcl’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:348:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:350:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_add_node’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:369:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:371:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_del_node’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:390:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:392:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_dvs_init’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:411:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:413:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_proxy_conn’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:432:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:434:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_wait4bindep_X’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:543:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:61:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("DEBUG: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:547:5: note: in expansion of macro ‘PRINT_RETURN’
+     PRINT_RETURN(ret);
+     ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:61:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("DEBUG: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:553:6: note: in expansion of macro ‘PRINT_RETURN’
+      PRINT_RETURN(ret);
+      ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:559:5: note: in expansion of macro ‘ERROR_RETURN’
+     ERROR_RETURN(old_errno);
+     ^~~~~~~~~~~~
+In file included from arch/um/drivers/um_dvk.c:23:0:
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:566:27: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    msg_ptr->sch_ep        = endpoint;
+                           ^
+In file included from /usr/src/dvs/dvk-lib/stub_dvkcall.c:53:0,
+                 from arch/um/drivers/um_dvk.c:23:
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:573:5: note: in expansion of macro ‘ERROR_RETURN’
+     ERROR_RETURN(old_errno);
+     ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:577:5: note: in expansion of macro ‘ERROR_RETURN’
+     ERROR_RETURN(old_errno);
+     ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:581:5: note: in expansion of macro ‘ERROR_RETURN’
+     ERROR_RETURN(old_errno);
+     ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:585:5: note: in expansion of macro ‘ERROR_RETURN’
+     ERROR_RETURN(old_errno);
+     ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:590:5: note: in expansion of macro ‘ERROR_RETURN’
+     ERROR_RETURN(old_errno);
+     ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:594:5: note: in expansion of macro ‘ERROR_RETURN’
+     ERROR_RETURN(old_errno);
+     ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:601:4: note: in expansion of macro ‘LIBDEBUG’
+    LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+    ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:606:6: note: in expansion of macro ‘ERROR_RETURN’
+      ERROR_RETURN(ret);
+      ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:609:5: note: in expansion of macro ‘ERROR_RETURN’
+     ERROR_RETURN(ret);
+     ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:612:4: note: in expansion of macro ‘ERROR_RETURN’
+    ERROR_RETURN(ret);
+    ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:616:4: note: in expansion of macro ‘ERROR_RETURN’
+    ERROR_RETURN(ret);
+    ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:61:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("DEBUG: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:618:4: note: in expansion of macro ‘PRINT_RETURN’
+    PRINT_RETURN(ret);
+    ^~~~~~~~~~~~
+In file included from arch/um/drivers/um_dvk.c:23:0:
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:450:20: warning: unused variable ‘proc_ptr’ [-Wunused-variable]
+  proc_usr_t proc, *proc_ptr;
+                    ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:450:13: warning: unused variable ‘proc’ [-Wunused-variable]
+  proc_usr_t proc, *proc_ptr;
+             ^~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: At top level:
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:625:0: warning: "dvk_unbind" redefined
+ #define dvk_unbind(dcid,p_ep)       stub_dvkcall3(DVK_UNBIND, dcid, p_ep, TIMEOUT_FOREVER)
+ 
+In file included from arch/um/drivers/um_dvk.h:23:0,
+                 from arch/um/drivers/um_dvk.c:21:
+/usr/src/dvs/include/com/stub_dvkcall.h:33:0: note: this is the location of the previous definition
+ #define dvk_unbind(dcid,p_ep)       dvk_unbind_T(dcid, p_ep, TIMEOUT_FOREVER)
+ 
+In file included from /usr/src/dvs/dvk-lib/stub_dvkcall.c:53:0,
+                 from arch/um/drivers/um_dvk.c:23:
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_unbind_T’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:641:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:643:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_send_T’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:664:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:666:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_receive_T’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:688:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:690:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_sendrec_T’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:712:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:714:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_reply_T’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:736:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:738:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_notify_X’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:763:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:765:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_setpriv’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:785:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:787:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_getpriv’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:808:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:810:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+In file included from arch/um/drivers/um_dvk.c:23:0:
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: At top level:
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:815:0: warning: "dvk_get2rmt" redefined
+ #define dvk_get2rmt(header, payload)    stub_dvkcall3(GET2RMT, (int)header, (int)payload, HELLO_PERIOD)
+ 
+In file included from arch/um/drivers/um_dvk.h:23:0,
+                 from arch/um/drivers/um_dvk.c:21:
+/usr/src/dvs/include/com/stub_dvkcall.h:50:0: note: this is the location of the previous definition
+ #define dvk_get2rmt(header, payload)     dvk_get2rmt_T(header, payload, HELLO_PERIOD)
+ 
+In file included from /usr/src/dvs/dvk-lib/stub_dvkcall.c:53:0,
+                 from arch/um/drivers/um_dvk.c:23:
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_get2rmt_T’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:832:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:834:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_node_up’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:855:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:857:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_getproxyinfo’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:878:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:880:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_getprocinfo’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:901:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:903:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+In file included from arch/um/drivers/um_dvk.c:23:0:
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: At top level:
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:908:0: warning: "dvk_bind" redefined
+ #define dvk_bind(dcid,endpoint)    dvk_bind_X(SELF_BIND, dcid, getpid(), endpoint, LOCALNODE)
+ 
+In file included from arch/um/drivers/um_dvk.h:23:0,
+                 from arch/um/drivers/um_dvk.c:21:
+/usr/src/dvs/include/com/stub_dvkcall.h:54:0: note: this is the location of the previous definition
+ #define dvk_bind(dcid,endpoint)    dvk_bind_X(SELF_BIND, dcid, (-1), endpoint, LOCALNODE)
+ 
+In file included from /usr/src/dvs/dvk-lib/stub_dvkcall.c:53:0,
+                 from arch/um/drivers/um_dvk.c:23:
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_bind_X’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:947:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:949:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_proxies_bind’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:974:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:976:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+/usr/src/dvs/dvk-lib/stub_dvkcall.c: In function ‘dvk_migrate_X’:
+/usr/src/dvs/dvk-lib/stub_debug.h:53:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+    printf("DEBUG %d:%s:%u: " \
+           ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:1003:5: note: in expansion of macro ‘LIBDEBUG’
+     LIBDEBUG(DBGPARAMS,"ioctl ret=%d\n",ret);
+     ^~~~~~~~
+/usr/src/dvs/dvk-lib/stub_debug.h:37:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long int’ [-Wformat=]
+       printf("ERROR: %d:%s:%u: rcode=%d\n",getpid(), __FUNCTION__ ,__LINE__,rcode); \
+              ^
+/usr/src/dvs/dvk-lib/stub_dvkcall.c:1005:3: note: in expansion of macro ‘ERROR_RETURN’
+   ERROR_RETURN(ret);
+   ^~~~~~~~~~~~
+arch/um/drivers/um_dvk.c: In function ‘uml_dvk_ioctl’:
+arch/um/drivers/um_dvk.c:56:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  int lnx_pid = os_getpid();
+  ^~~
+In file included from arch/um/drivers/um_dvk.h:25:0,
+                 from arch/um/drivers/um_dvk.c:21:
+/usr/src/dvs/dvk-mod/dvk_debug.h:42:12: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 8 has type ‘long unsigned int’ [-Wformat=]
+     printk("DEBUG %s:%u: " text, __FUNCTION__ ,__LINE__, ## args)
+            ^
+arch/um/drivers/um_dvk.c:59:2: note: in expansion of macro ‘DVKDEBUG’
+  DVKDEBUG(DBGPARAMS,"lnx_pid=%d us_pid=%d uml_pid=%d cmd=%X arg=%X\n",
+  ^~~~~~~~
+arch/um/drivers/um_dvk.c:53:8: warning: unused variable ‘ptr’ [-Wunused-variable]
+  void *ptr;
+        ^~~
+arch/um/drivers/um_dvk.c: In function ‘uml_dvk_open’:
+arch/um/drivers/um_dvk.c:83:14: warning: unused variable ‘proc_ptr’ [-Wunused-variable]
+  proc_usr_t *proc_ptr;
+              ^~~~~~~~
+arch/um/drivers/um_dvk.c:82:12: warning: unused variable ‘dcu_ptr’ [-Wunused-variable]
+  dc_usr_t *dcu_ptr;
+            ^~~~~~~
+arch/um/drivers/um_dvk.c:81:13: warning: unused variable ‘dvsu_ptr’ [-Wunused-variable]
+  dvs_usr_t *dvsu_ptr;
+             ^~~~~~~~
+arch/um/drivers/um_dvk.c:80:6: warning: unused variable ‘ep’ [-Wunused-variable]
+  int ep;
+      ^~
+In file included from ./include/linux/utsname.h:5:0,
+                 from init/version.c:12:
+./include/linux/sched.h:1951:10: note: #pragma message: USE_TASK_MUTEX
+  #pragma message ("USE_TASK_MUTEX")
+          ^~~~~~~
