@@ -120,8 +120,8 @@ config UML_NET_DAEMON
         more than one without conflict.  If you don't need UML networking,
         say N.
 
-config UML_NET_RDAEMON
-	bool "Remote daemon transport"
+config UML_NET_RMTETH
+	bool "Remote ethernet daemon transport"
 	depends on UML_NET
 	help
         This User-Mode Linux network transport allows one or more running
