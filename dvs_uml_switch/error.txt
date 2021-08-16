@@ -1,0 +1,107 @@
+In file included from switch.h:76:0,
+                 from rmttap.c:2:
+../../include/com/dvk_calls.h:41:0: warning: "NR_DVK_CALLS" redefined
+ #define NR_DVK_CALLS   DVK_NR_CALLS
+ 
+In file included from ../../include/com/priv_usr.h:9:0,
+                 from switch.h:66,
+                 from rmttap.c:2:
+../../include/com/kipc.h:56:0: note: this is the location of the previous definition
+ #define NR_DVK_CALLS 38   /* Numero de IPCs/DRDCM Calls habilitadas */
+ 
+rmttap.c: In function ‘rmttap_init’:
+rmttap.c:8:6: warning: unused variable ‘rcode’ [-Wunused-variable]
+  int rcode;
+      ^~~~~
+rmttap.c: In function ‘open_lcltap’:
+rmttap.c:69:6: warning: implicit declaration of function ‘ioctl’ [-Wimplicit-function-declaration]
+   if(ioctl(fd, TUNSETIFF, (void *) &ifr) < 0){
+      ^~~~~
+rmttap.c:57:11: warning: unused variable ‘err’ [-Wunused-variable]
+   int fd, err;
+           ^~~
+In file included from switch.h:229:0,
+                 from rmttap.c:2:
+rmttap.c: In function ‘rt_send_write_packet’:
+../debug.h:8:13: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 12 has type ‘unsigned char *’ [-Wformat=]
+      printf(" %d:%s:%s:%u:" \
+             ^
+rmttap.c:182:3: note: in expansion of macro ‘USRDEBUG’
+   USRDEBUG("REQ_SW_WRITE: " PKTSRC_FORMAT, PKTSRC_FIELDS(pkt_ptr));
+   ^~~~~~~~
+../debug.h:8:13: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 12 has type ‘unsigned char *’ [-Wformat=]
+      printf(" %d:%s:%s:%u:" \
+             ^
+rmttap.c:186:3: note: in expansion of macro ‘USRDEBUG’
+   USRDEBUG("REQ_RT_WRITE: " PKTSRC_FORMAT, PKTSRC_FIELDS(pkt_ptr));
+   ^~~~~~~~
+rmttap.c: In function ‘get_dc_params’:
+../debug.h:8:13: warning: format ‘%ld’ expects argument of type ‘long int’, but argument 8 has type ‘pid_t {aka int}’ [-Wformat=]
+      printf(" %d:%s:%s:%u:" \
+             ^
+rmttap.c:270:2: note: in expansion of macro ‘USRDEBUG’
+  USRDEBUG(DC_USR2_FORMAT, DC_USR2_FIELDS(dc_ptr));
+  ^~~~~~~~
+rmttap.c: In function ‘send_thread’:
+rmttap.c:368:51: warning: pointer targets in passing argument 6 of ‘recvfrom’ differ in signedness [-Wpointer-sign]
+         (struct sockaddr *) &rt_ptr->rt_data_sun, &socklen);
+                                                   ^
+In file included from /usr/include/netinet/in.h:23:0,
+                 from /usr/include/netdb.h:27,
+                 from switch.h:31,
+                 from rmttap.c:2:
+/usr/include/i386-linux-gnu/sys/socket.h:174:16: note: expected ‘socklen_t * restrict {aka unsigned int * restrict}’ but argument is of type ‘int *’
+ extern ssize_t recvfrom (int __fd, void *__restrict __buf, size_t __n,
+                ^~~~~~~~
+In file included from switch.h:229:0,
+                 from rmttap.c:2:
+../debug.h:8:13: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 12 has type ‘unsigned char *’ [-Wformat=]
+      printf(" %d:%s:%s:%u:" \
+             ^
+rmttap.c:398:6: note: in expansion of macro ‘USRDEBUG’
+      USRDEBUG(PKTSRC_FORMAT, PKTSRC_FIELDS(pkt_ptr));
+      ^~~~~~~~
+rmttap.c: In function ‘add_rt_fd’:
+rmttap.c:424:17: warning: unused variable ‘p’ [-Wunused-variable]
+  struct pollfd *p;
+                 ^
+In file included from switch.h:229:0,
+                 from rmttap.c:2:
+rmttap.c: In function ‘recv_thread’:
+../debug.h:8:13: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 12 has type ‘unsigned char *’ [-Wformat=]
+      printf(" %d:%s:%s:%u:" \
+             ^
+rmttap.c:539:5: note: in expansion of macro ‘USRDEBUG’
+     USRDEBUG("REQ_RT_WRITE: " PKTSRC_FORMAT, PKTSRC_FIELDS(pkt_ptr));
+     ^~~~~~~~
+../debug.h:8:13: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 12 has type ‘unsigned char *’ [-Wformat=]
+      printf(" %d:%s:%s:%u:" \
+             ^
+rmttap.c:592:5: note: in expansion of macro ‘USRDEBUG’
+     USRDEBUG("REQ_SW_WRITE: " PKTSRC_FORMAT, PKTSRC_FIELDS(pkt_ptr));
+     ^~~~~~~~
+rmttap.c:439:28: warning: unused variable ‘rmt_idx’ [-Wunused-variable]
+  int rcode, i,tap_fd, len, rmt_idx,lcl_idx ;
+                            ^~~~~~~
+rmttap.c: In function ‘init_rt_threads’:
+rmttap.c:659:46: warning: passing argument 3 of ‘pthread_create’ from incompatible pointer type [-Wincompatible-pointer-types]
+  rcode = pthread_create( &init_thread, NULL, init_rt_sockets, (void *) NULL);
+                                              ^~~~~~~~~~~~~~~
+In file included from switch.h:29:0,
+                 from rmttap.c:2:
+/usr/include/pthread.h:233:12: note: expected ‘void * (*)(void *)’ but argument is of type ‘void (*)(void)’
+ extern int pthread_create (pthread_t *__restrict __newthread,
+            ^~~~~~~~~~~~~~
+rmttap.c: In function ‘init_rt_sockets’:
+rmttap.c:674:14: warning: unused variable ‘node_ptr’ [-Wunused-variable]
+  node_usr_t *node_ptr;
+              ^~~~~~~~
+rmttap.c:670:24: warning: unused variable ‘lcl_fd’ [-Wunused-variable]
+  int i, rcode, rmt_fd, lcl_fd;
+                        ^~~~~~
+In file included from switch.h:237:0,
+                 from rmttap.c:2:
+rmttap.c: At top level:
+daemon.h:11:28: warning: ‘new_addr’ declared ‘static’ but never defined [-Wunused-function]
+ static struct sockaddr_un *new_addr(void *name, int len);
+                            ^~~~~~~~

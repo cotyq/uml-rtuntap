@@ -1,0 +1,661 @@
+ 945:switch_cfg.c:switch_config:358:BEFORE config_read
+ configfile.c:config_read:459:file=switch0.cfg flags=400
+ configfile.c:read_file:412:file=switch0.cfg
+ configfile.c:allocate:65:size=20
+ configfile.c:read_list:357:
+ configfile.c:read_line:315:
+ configfile.c:read_word:179:
+ configfile.c:allocate:65:size=53
+ configfile.c:allocate:65:size=27
+ configfile.c:read_word:179:
+ configfile.c:allocate:65:size=53
+ configfile.c:allocate:65:size=28
+ configfile.c:allocate:65:size=20
+ configfile.c:read_list:357:
+ configfile.c:read_line:315:
+ configfile.c:read_word:179:
+ configfile.c:allocate:65:size=53
+ configfile.c:allocate:65:size=25
+ configfile.c:read_word:179:
+ configfile.c:allocate:65:size=53
+ configfile.c:allocate:65:size=33
+ configfile.c:allocate:65:size=20
+ configfile.c:read_line:315:
+ configfile.c:read_word:179:
+ configfile.c:allocate:65:size=53
+ configfile.c:allocate:65:size=24
+ configfile.c:read_word:179:
+ configfile.c:allocate:65:size=53
+ configfile.c:allocate:65:size=23
+ configfile.c:allocate:65:size=20
+ configfile.c:read_line:315:
+ configfile.c:read_word:179:
+ configfile.c:allocate:65:size=53
+ configfile.c:allocate:65:size=27
+ configfile.c:read_word:179:
+ configfile.c:allocate:65:size=53
+ configfile.c:allocate:65:size=23
+ configfile.c:allocate:65:size=20
+ configfile.c:read_line:315:
+ configfile.c:read_word:179:
+ configfile.c:allocate:65:size=53
+ configfile.c:allocate:65:size=24
+ configfile.c:read_word:179:
+ configfile.c:allocate:65:size=53
+ configfile.c:allocate:65:size=25
+ configfile.c:allocate:65:size=20
+ configfile.c:read_line:315:
+ configfile.c:read_word:179:
+ configfile.c:allocate:65:size=53
+ configfile.c:allocate:65:size=25
+ configfile.c:read_word:179:
+ configfile.c:allocate:65:size=53
+ configfile.c:allocate:65:size=22
+ configfile.c:allocate:65:size=20
+ configfile.c:read_line:315:
+ configfile.c:allocate:65:size=20
+ configfile.c:read_line:315:
+ configfile.c:read_word:179:
+ configfile.c:allocate:65:size=53
+ configfile.c:allocate:65:size=27
+ configfile.c:read_word:179:
+ configfile.c:allocate:65:size=53
+ configfile.c:allocate:65:size=26
+ configfile.c:allocate:65:size=20
+ configfile.c:read_list:357:
+ configfile.c:read_line:315:
+ configfile.c:read_word:179:
+ configfile.c:allocate:65:size=53
+ configfile.c:allocate:65:size=24
+ configfile.c:read_word:179:
+ configfile.c:allocate:65:size=53
+ configfile.c:allocate:65:size=25
+ configfile.c:allocate:65:size=20
+ configfile.c:read_line:315:
+ configfile.c:read_word:179:
+ configfile.c:allocate:65:size=53
+ configfile.c:allocate:65:size=27
+ configfile.c:read_word:179:
+ configfile.c:allocate:65:size=53
+ configfile.c:allocate:65:size=22
+ configfile.c:allocate:65:size=20
+ configfile.c:read_line:315:
+ configfile.c:allocate:65:size=20
+ configfile.c:read_line:315:
+ configfile.c:read_word:179:
+ configfile.c:allocate:65:size=53
+ configfile.c:allocate:65:size=27
+ configfile.c:read_word:179:
+ configfile.c:allocate:65:size=53
+ configfile.c:allocate:65:size=26
+ configfile.c:allocate:65:size=20
+ configfile.c:read_list:357:
+ configfile.c:read_line:315:
+ configfile.c:read_word:179:
+ configfile.c:allocate:65:size=53
+ configfile.c:allocate:65:size=24
+ configfile.c:read_word:179:
+ configfile.c:allocate:65:size=53
+ configfile.c:allocate:65:size=25
+ configfile.c:allocate:65:size=20
+ configfile.c:read_line:315:
+ configfile.c:read_word:179:
+ configfile.c:allocate:65:size=53
+ configfile.c:allocate:65:size=27
+ configfile.c:read_word:179:
+ configfile.c:allocate:65:size=53
+ configfile.c:allocate:65:size=22
+ configfile.c:allocate:65:size=20
+ configfile.c:read_line:315:
+ configfile.c:allocate:65:size=20
+ configfile.c:read_line:315:
+ configfile.c:allocate:65:size=30
+ 945:switch_cfg.c:switch_config:360:AFTER config_read
+ 945:switch_cfg.c:scan_config:324:
+ 945:switch_cfg.c:scan_config:330:scan_config[0] line=2
+ 945:switch_cfg.c:search_main_token:252:line=2
+ 945:switch_cfg.c:search_main_token:255:word=switch
+ 945:switch_cfg.c:search_main_token:258:switch: 
+ 945:switch_cfg.c:search_main_token:261:SW_NAME
+ 945:switch_cfg.c:read_sw_lines:221:
+ 945:switch_cfg.c:read_sw_lines:223:read_sw_lines type=200
+ 945:switch_cfg.c:search_sw_ident:78:
+ 945:switch_cfg.c:search_sw_ident:81:search_sw_ident[0] line=3 word=path
+ 945:switch_cfg.c:search_sw_ident:84:line[3] MATCH identifier path
+ 945:switch_cfg.c:search_sw_ident:94:path=/tmp/uml.ctl
+ 945:switch_cfg.c:search_sw_ident:96:sw_ptr->sw_ctrl_path=/tmp/uml.ctl
+ 945:switch_cfg.c:read_sw_lines:223:read_sw_lines type=200
+ 945:switch_cfg.c:search_sw_ident:78:
+ 945:switch_cfg.c:search_sw_ident:81:search_sw_ident[0] line=4 word=hub
+ 945:switch_cfg.c:search_sw_ident:84:line[4] MATCH identifier hub
+ 945:switch_cfg.c:search_sw_ident:126:sw_ptr->sw_hub=0
+ 945:switch_cfg.c:read_sw_lines:223:read_sw_lines type=200
+ 945:switch_cfg.c:search_sw_ident:78:
+ 945:switch_cfg.c:search_sw_ident:81:search_sw_ident[0] line=5 word=daemon
+ 945:switch_cfg.c:search_sw_ident:84:line[5] MATCH identifier daemon
+ 945:switch_cfg.c:search_sw_ident:141:sw_ptr->sw_daemon=0
+ 945:switch_cfg.c:read_sw_lines:223:read_sw_lines type=200
+ 945:switch_cfg.c:search_sw_ident:78:
+ 945:switch_cfg.c:search_sw_ident:81:search_sw_ident[0] line=6 word=tap
+ 945:switch_cfg.c:search_sw_ident:84:line[6] MATCH identifier tap
+ 945:switch_cfg.c:search_sw_ident:148:tap=tap0
+ 945:switch_cfg.c:search_sw_ident:150:sw_ptr->sw_tap=tap0
+ 945:switch_cfg.c:read_sw_lines:223:read_sw_lines type=200
+ 945:switch_cfg.c:search_sw_ident:78:
+ 945:switch_cfg.c:search_sw_ident:81:search_sw_ident[0] line=7 word=dcid
+ 945:switch_cfg.c:search_sw_ident:84:line[7] MATCH identifier dcid
+ 945:switch_cfg.c:search_sw_ident:103:dcid=0
+ 945:switch_cfg.c:search_sw_ident:111:sw_ptr->sw_dcid=0
+ 945:switch_cfg.c:search_main_token:270:sw_hub=0 sw_daemon=0 sw_recv_ep=27342 sw_send_ep=27342 sw_dcid=0 sw_ctrl_path=/tmp/uml.ctl sw_tap=tap0 sw_conn_fd=0 sw_data_fd=0 sw_name=SW_NAME
+ 945:switch_cfg.c:scan_config:330:scan_config[1] line=10
+ 945:switch_cfg.c:search_main_token:252:line=10
+ 945:switch_cfg.c:search_main_token:255:word=rmttap
+ 945:switch_cfg.c:search_main_token:282:rmttap: 
+ 945:switch_cfg.c:search_main_token:285:RTAP1
+ 945:switch_cfg.c:read_rt_lines:235:
+ 945:switch_cfg.c:read_rt_lines:237:read_rt_lines type=200
+ 945:switch_cfg.c:search_rt_ident:172:
+ 945:switch_cfg.c:search_rt_ident:175:search_rt_ident[0] line=11 word=tap
+ 945:switch_cfg.c:search_rt_ident:178:line[11] MATCH identifier tap
+ 945:switch_cfg.c:search_rt_ident:196:tap=tap1
+ 945:switch_cfg.c:search_rt_ident:198:rt_ptr->rt_tap=tap1
+ 945:switch_cfg.c:read_rt_lines:239:
+ 945:switch_cfg.c:read_rt_lines:237:read_rt_lines type=200
+ 945:switch_cfg.c:search_rt_ident:172:
+ 945:switch_cfg.c:search_rt_ident:175:search_rt_ident[0] line=12 word=nodeid
+ 945:switch_cfg.c:search_rt_ident:178:line[12] MATCH identifier nodeid
+ 945:switch_cfg.c:search_rt_ident:189:nodeid=1
+ 945:switch_cfg.c:read_rt_lines:239:
+ 945:switch_cfg.c:search_main_token:301:rt_index=0 rt_nodeid=1 rt_tap=tap1 rt_ctrl_fd=-1 rt_data_fd=-1 rt_poll_idx=-1 rt_rmt_ep=0 rt_rmt_idx=0 rt_rmttap_fd=-1 rt_name=RTAP1
+ 945:switch_cfg.c:scan_config:330:scan_config[2] line=15
+ 945:switch_cfg.c:search_main_token:252:line=15
+ 945:switch_cfg.c:search_main_token:255:word=rmttap
+ 945:switch_cfg.c:search_main_token:282:rmttap: 
+ 945:switch_cfg.c:search_main_token:285:LTAP1
+ 945:switch_cfg.c:read_rt_lines:235:
+ 945:switch_cfg.c:read_rt_lines:237:read_rt_lines type=200
+ 945:switch_cfg.c:search_rt_ident:172:
+ 945:switch_cfg.c:search_rt_ident:175:search_rt_ident[0] line=16 word=tap
+ 945:switch_cfg.c:search_rt_ident:178:line[16] MATCH identifier tap
+ 945:switch_cfg.c:search_rt_ident:196:tap=tap1
+ 945:switch_cfg.c:search_rt_ident:198:rt_ptr->rt_tap=tap1
+ 945:switch_cfg.c:read_rt_lines:239:
+ 945:switch_cfg.c:read_rt_lines:237:read_rt_lines type=200
+ 945:switch_cfg.c:search_rt_ident:172:
+ 945:switch_cfg.c:search_rt_ident:175:search_rt_ident[0] line=17 word=nodeid
+ 945:switch_cfg.c:search_rt_ident:178:line[17] MATCH identifier nodeid
+ 945:switch_cfg.c:search_rt_ident:189:nodeid=0
+ 945:switch_cfg.c:read_rt_lines:239:
+ 945:switch_cfg.c:search_main_token:301:rt_index=1 rt_nodeid=0 rt_tap=tap1 rt_ctrl_fd=-1 rt_data_fd=-1 rt_poll_idx=-1 rt_rmt_ep=0 rt_rmt_idx=0 rt_rmttap_fd=-1 rt_name=LTAP1
+ 945:switch_cfg.c:switch_config:392:rt_index=0 rt_nodeid=1 rt_tap=tap1 rt_ctrl_fd=-1 rt_data_fd=-1 rt_poll_idx=-1 rt_rmt_ep=0 rt_rmt_idx=0 rt_rmttap_fd=-1 rt_name=RTAP1
+ 945:switch_cfg.c:switch_config:392:rt_index=1 rt_nodeid=0 rt_tap=tap1 rt_ctrl_fd=-1 rt_data_fd=-1 rt_poll_idx=-1 rt_rmt_ep=0 rt_rmt_idx=0 rt_rmttap_fd=-1 rt_name=LTAP1
+ 945:switch_cfg.c:switch_config:402:nr_switch=1 nr_rmttap=2
+ 945:dvs_uml_switch.c:main:420:sw_hub=0 sw_daemon=0 sw_recv_ep=27342 sw_send_ep=27342 sw_dcid=0 sw_ctrl_path=/tmp/uml.ctl sw_tap=tap0 sw_conn_fd=0 sw_data_fd=0 sw_name=SW_NAME
+DEBUG 945:dvk_open:108: Open dvk device file /dev/dvk
+ 945:rmttap.c:get_dvs_params:219:
+DEBUG 945:dvk_getdvsinfo:265: 
+DEBUG 945:dvk_getdvsinfo:274: ioctl ret=0 errno=0
+DEBUG 945:dvk_getdvsinfo:279: ioctl ret=0
+ 945:rmttap.c:get_dvs_params:221:local_nodeid=0
+ 945:rmttap.c:get_dvs_params:224:d_name=TEST_CLUSTER d_nr_dcs=32 d_nr_nodes=32 d_nr_procs=221 d_nr_tasks=35 d_nr_sysprocs=64 
+ 945:rmttap.c:get_dc_params:234:dcid=0
+DEBUG 945:dvk_getdcinfo:366: dcid=0
+DEBUG 945:dvk_getdcinfo:378: ioctl ret=0 errno=0
+DEBUG 945:dvk_getdcinfo:383: ioctl ret=0
+ 945:rmttap.c:get_dc_params:242:dc_dcid=0 dc_nr_procs=221 dc_nr_tasks=34 dc_nr_sysprocs=64 dc_nr_nodes=32
+ 945:rmttap.c:get_dc_params:243:flags=0 dc_nodes=7 dc_pid=691 dc_name=DC0
+ 945:dvs_uml_switch.c:main:440:sw_ptr->sw_conn_fd=4
+ 945:dvs_uml_switch.c:main:456:sw_ptr->sw_data_fd=5
+ 945:dvs_uml_switch.c:bind_sockets:327:ctl_fd=4 ctl_name=/tmp/uml.ctl data_fd=5
+ 945:dvs_uml_switch.c:bind_socket:216:fd=4 name=/tmp/uml.ctl
+ 945:dvs_uml_switch.c:bind_socket:220:sun_path=/tmp/uml.ctl 
+ 945:dvs_uml_switch.c:bind_data_socket:308:fd=5 
+ 945:dvs_uml_switch.c:bind_data_socket:316:sun_path= 
+./dvs_uml_switch attached to unix socket '/tmp/uml.ctl' 945:dvs_uml_switch.c:add_fd:43:fd=0
+ 945:dvs_uml_switch.c:add_fd:43:fd=4
+ 945:dvs_uml_switch.c:add_fd:43:fd=5
+ 945:dvs_uml_switch.c:main:487:sw_ptr->sw_tap=tap0
+ 945:tuntap.c:open_tap:21:dev=tap0
+ 945:port.c:setup_port:153:ctrl_fd=6 
+New connection
+ 945:tuntap.c:open_tap:39:dev=tap0 fd=6
+ 945:dvs_uml_switch.c:main:490:SWITCH TAP tap0 sw_tap_fd=6
+ 945:dvs_uml_switch.c:add_fd:43:fd=6
+ 945:dvs_uml_switch.c:main:492:
+ 945:dvs_uml_switch.c:main:499:
+ 945:dvs_uml_switch.c:main:501:MTX_LOCK sw_mutex 
+ 945:dvs_uml_switch.c:main:509:
+ 945:dvs_uml_switch.c:main:516:Timeout
+ 945:dvs_uml_switch.c:main:519:MTX_UNLOCK sw_mutex 
+ 946:rmttap.c:init_rt_sockets:637:
+ 946:rmttap.c:init_rt_sockets:638:MTX_LOCK sw_mutex 
+DEBUG 945:dvk_getprocinfo:1177: dcid=0 p_nr=1 
+DEBUG 945:dvk_getprocinfo:1190: ioctl ret=0 errno=0
+DEBUG 945:dvk_getprocinfo:1195: ioctl ret=0
+DEBUG 945:dvk_bind_X:1221: cmd=2 dcid=0 pid=4706380 endpoint=1 nodeid=1
+DEBUG 945:dvk_bind_X:1236: ioctl ret=1 errno=0
+DEBUG 945:dvk_bind_X:1251: ioctl ret=1
+DEBUG 945:dvk_bind_X:1254: ret=1
+DEBUG 945:dvk_getprocinfo:1177: dcid=0 p_nr=1 
+DEBUG 945:dvk_getprocinfo:1190: ioctl ret=0 errno=0
+DEBUG 945:dvk_getprocinfo:1195: ioctl ret=0
+ 946:rmttap.c:init_rt_sockets:665:nr=1 endp=1 dcid=0 flags=1000 misc=0 lpid=-1 vpid=-1 nodeid=1 name=TAPserver01 
+DEBUG 945:dvk_getprocinfo:1177: dcid=0 p_nr=31 
+DEBUG 945:dvk_getprocinfo:1190: ioctl ret=0 errno=0
+DEBUG 945:dvk_getprocinfo:1195: ioctl ret=0
+DEBUG 945:dvk_bind_X:1221: cmd=2 dcid=0 pid=4706380 endpoint=31 nodeid=1
+DEBUG 945:dvk_bind_X:1236: ioctl ret=31 errno=0
+DEBUG 945:dvk_bind_X:1251: ioctl ret=31
+DEBUG 945:dvk_bind_X:1254: ret=31
+DEBUG 945:dvk_getprocinfo:1177: dcid=0 p_nr=31 
+DEBUG 945:dvk_getprocinfo:1190: ioctl ret=0 errno=0
+DEBUG 945:dvk_getprocinfo:1195: ioctl ret=0
+ 946:rmttap.c:init_rt_sockets:683:nr=31 endp=31 dcid=0 flags=1000 misc=0 lpid=-1 vpid=-1 nodeid=1 name=TAPclient01 
+DEBUG 945:dvk_getprocinfo:1177: dcid=0 p_nr=2 
+DEBUG 945:dvk_getprocinfo:1190: ioctl ret=0 errno=0
+DEBUG 945:dvk_getprocinfo:1195: ioctl ret=0
+DEBUG 945:dvk_bind_X:1221: cmd=2 dcid=0 pid=4706380 endpoint=2 nodeid=2
+DEBUG 945:dvk_bind_X:1236: ioctl ret=2 errno=0
+DEBUG 945:dvk_bind_X:1251: ioctl ret=2
+DEBUG 945:dvk_bind_X:1254: ret=2
+DEBUG 945:dvk_getprocinfo:1177: dcid=0 p_nr=2 
+DEBUG 945:dvk_getprocinfo:1190: ioctl ret=0 errno=0
+DEBUG 945:dvk_getprocinfo:1195: ioctl ret=0
+ 946:rmttap.c:init_rt_sockets:665:nr=2 endp=2 dcid=0 flags=1000 misc=0 lpid=-1 vpid=-1 nodeid=2 name=TAPserver02 
+DEBUG 945:dvk_getprocinfo:1177: dcid=0 p_nr=32 
+DEBUG 945:dvk_getprocinfo:1190: ioctl ret=0 errno=0
+DEBUG 945:dvk_getprocinfo:1195: ioctl ret=0
+DEBUG 945:dvk_bind_X:1221: cmd=2 dcid=0 pid=4706380 endpoint=32 nodeid=2
+DEBUG 945:dvk_bind_X:1236: ioctl ret=32 errno=0
+DEBUG 945:dvk_bind_X:1251: ioctl ret=32
+DEBUG 945:dvk_bind_X:1254: ret=32
+DEBUG 945:dvk_getprocinfo:1177: dcid=0 p_nr=32 
+DEBUG 945:dvk_getprocinfo:1190: ioctl ret=0 errno=0
+DEBUG 945:dvk_getprocinfo:1195: ioctl ret=0
+ 946:rmttap.c:init_rt_sockets:683:nr=32 endp=32 dcid=0 flags=1000 misc=0 lpid=-1 vpid=-1 nodeid=2 name=TAPclient02 
+ 946:rmttap.c:init_rt_sockets:706:rt_index=0 rt_nodeid=1 rt_tap=tap1 rt_ctrl_fd=-1 rt_data_fd=-1 rt_poll_idx=-1 rt_rmt_ep=-1 rt_rmt_idx=-1 rt_rmttap_fd=-1 rt_name=RTAP1
+ 946:rmttap.c:rmttap_init:8:
+rmttap_init (dvs_uml_switch version 3) - unix
+		/tmp/uml0000.ctrl
+		/tmp/uml0000.ctrl
+ 946:rmttap.c:connect_to_switch:58:rt_name=RTAP1
+ 946:rmttap.c:connect_to_switch:70:CTRL sun_path=/tmp/uml.ctl 
+ 945:dvs_uml_switch.c:accept_connection:171:fd=4
+ 945:dvs_uml_switch.c:add_fd:43:fd=8
+ 946:rmttap.c:connect_to_switch:90:DATA sun_path=/tmp/uml0000.data 
+ 946:rmttap.c:connect_to_switch:105:write to switch RTAP1  rt_ctrl_fd=7 rt_data_fd=-1
+ 945:port.c:handle_port:254:fd=8
+ 945:dvs_uml_switch.c:new_port:138:ctrl_fd=8 data_fd=5
+ 945:dvs_uml_switch.c:new_port_v1_v3:108:ctrl_fd=8 type=0 data_fd=5
+ 945:port.c:setup_sock_port:226:ctrl_fd=8 data_fd=5
+ 945:port.c:setup_port:153:ctrl_fd=8 
+New connection
+ 946:rmttap.c:connect_to_switch:115:read from switch RTAP1 rt_ctrl_fd=7 rt_data_fd=-1
+ 946:rmttap.c:connect_to_switch:125:rt_index=0 rt_nodeid=1 rt_tap=tap1 rt_ctrl_fd=7 rt_data_fd=-1 rt_poll_idx=-1 rt_rmt_ep=-1 rt_rmt_idx=-1 rt_rmttap_fd=-1 rt_name=RTAP1
+DEBUG 945:dvk_getprocinfo:1177: dcid=0 p_nr=1 
+DEBUG 945:dvk_getprocinfo:1190: ioctl ret=0 errno=2
+DEBUG 945:dvk_getprocinfo:1195: ioctl ret=0
+DEBUG 945:dvk_getprocinfo:1177: dcid=0 p_nr=1 
+DEBUG 945:dvk_getprocinfo:1190: ioctl ret=0 errno=0
+DEBUG 945:dvk_getprocinfo:1195: ioctl ret=0
+ 946:rmttap.c:init_rt_sockets:727:rt_index=0 rt_nodeid=1 rt_tap=tap1 rt_ctrl_fd=7 rt_data_fd=9 rt_poll_idx=0 rt_rmt_ep=-1 rt_rmt_idx=-1 rt_rmttap_fd=-1 rt_name=RTAP1
+ 946:rmttap.c:init_rt_sockets:701:rt_index=1 rt_nodeid=0 rt_tap=tap1 rt_ctrl_fd=-1 rt_data_fd=-1 rt_poll_idx=-1 rt_rmt_ep=-1 rt_rmt_idx=-1 rt_rmttap_fd=-1 rt_name=LTAP1
+ 946:rmttap.c:init_rt_sockets:734:rt_nfds=1 nr_lcltap=1
+ 946:rmttap.c:init_rt_sockets:741:MTX_UNLOCK sw_mutex 
+ 948:rmttap.c:recv_thread:417:RECEIVER THREAD: sw_recv_ep=0 sw_recv_tid=948
+DEBUG 945:dvk_bind_X:1221: cmd=0 dcid=0 pid=948 endpoint=0 nodeid=-1
+DEBUG 945:dvk_bind_X:1236: ioctl ret=0 errno=0
+DEBUG 945:dvk_bind_X:1251: ioctl ret=0
+DEBUG 945:dvk_bind_X:1254: ret=0
+DEBUG 945:dvk_getprocinfo:1177: dcid=0 p_nr=0 
+DEBUG 945:dvk_getprocinfo:1190: ioctl ret=0 errno=0
+DEBUG 945:dvk_getprocinfo:1195: ioctl ret=0
+ 948:rmttap.c:recv_thread:426:nr=0 endp=0 dcid=0 flags=0 misc=0 lpid=2203 vpid=948 nodeid=0 name=dvs_uml_switch 
+DEBUG 945:dvk_receive_T:897: endpoint=31438 timeout=30000
+ 947:rmttap.c:send_thread:293:SENDER THREAD: sw_send_ep=30 sw_send_tid=947
+DEBUG 945:dvk_bind_X:1221: cmd=0 dcid=0 pid=947 endpoint=30 nodeid=-1
+DEBUG 945:dvk_bind_X:1236: ioctl ret=30 errno=0
+DEBUG 945:dvk_bind_X:1251: ioctl ret=30
+DEBUG 945:dvk_bind_X:1254: ret=30
+DEBUG 945:dvk_getprocinfo:1177: dcid=0 p_nr=30 
+DEBUG 945:dvk_getprocinfo:1190: ioctl ret=0 errno=0
+DEBUG 945:dvk_getprocinfo:1195: ioctl ret=0
+ 947:rmttap.c:send_thread:303:nr=30 endp=30 dcid=0 flags=0 misc=0 lpid=2202 vpid=947 nodeid=0 name=dvs_uml_switch 
+ 947:rmttap.c:try_rmttap_open:254:nr_rmttap=2
+ 947:rmttap.c:try_rmttap_open:260:rt_index=0 rt_nodeid=1 rt_tap=tap1 rt_ctrl_fd=7 rt_data_fd=9 rt_poll_idx=0 rt_rmt_ep=-1 rt_rmt_idx=-1 rt_rmttap_fd=-1 rt_name=RTAP1
+ 947:rmttap.c:rt_open_rmttap:184:rt_index=0 rt_nodeid=1 rt_tap=tap1 rt_ctrl_fd=7 rt_data_fd=9 rt_poll_idx=0 rt_rmt_ep=-1 rt_rmt_idx=-1 rt_rmttap_fd=-1 rt_name=RTAP1
+DEBUG 945:dvk_getprocinfo:1177: dcid=0 p_nr=1 
+DEBUG 945:dvk_getprocinfo:1190: ioctl ret=0 errno=0
+DEBUG 945:dvk_getprocinfo:1195: ioctl ret=0
+ 947:rmttap.c:rt_open_rmttap:190:nr=1 endp=1 dcid=0 flags=1000 misc=0 lpid=-1 vpid=-1 nodeid=1 name=TAPserver01 
+ 947:rmttap.c:rt_open_rmttap:196:rt_ptr->rt_nodeid=1
+ 947:rmttap.c:rt_open_rmttap:197:SEND REQ_RT_OPEN REQUEST: source=0 type=1 m3i1=0 m3i2=0 m3p1=(nil) m3ca1=[tap1]
+DEBUG 945:dvk_sendrec_T:931: endpoint=1 timeout=30000
+ 945:port.c:handle_tap_data:138:fd=6 hub=0
+ 945:port.c:handle_data:112:fd=6 hub=0 len=90
+ 945:port.c:match_tap:128:port_fd=8 data_fd=6
+ 945:port.c:match_tap:128:port_fd=6 data_fd=6
+ 945:port.c:update_src:48:control=6 
+ Addr: 02:aa:bb:cc:dd:b0 New port 6
+ 945:port.c:send_dst:80:control=6 len=90 hub=0 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=90 
+ 945:port.c:handle_tap_data:138:fd=6 hub=0
+ 945:port.c:handle_data:112:fd=6 hub=0 len=90
+ 945:port.c:match_tap:128:port_fd=8 data_fd=6
+ 945:port.c:match_tap:128:port_fd=6 data_fd=6
+ 945:port.c:update_src:48:control=6 
+ Addr: 02:aa:bb:cc:dd:00 New port 6
+ 945:port.c:send_dst:80:control=6 len=90 hub=0 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=90 
+ 945:port.c:handle_tap_data:138:fd=6 hub=0
+ 945:port.c:handle_data:112:fd=6 hub=0 len=90
+ 945:port.c:match_tap:128:port_fd=8 data_fd=6
+ 945:port.c:match_tap:128:port_fd=6 data_fd=6
+ 945:port.c:update_src:48:control=6 
+ 945:port.c:send_dst:80:control=6 len=90 hub=0 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=90 
+ 945:port.c:handle_tap_data:138:fd=6 hub=0
+ 945:port.c:handle_data:112:fd=6 hub=0 len=90
+ 945:port.c:match_tap:128:port_fd=8 data_fd=6
+ 945:port.c:match_tap:128:port_fd=6 data_fd=6
+ 945:port.c:update_src:48:control=6 
+ 945:port.c:send_dst:80:control=6 len=90 hub=0 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=90 
+ 945:dvs_uml_switch.c:accept_connection:171:fd=4
+ 945:dvs_uml_switch.c:add_fd:43:fd=10
+ 945:port.c:handle_port:254:fd=10
+ 945:dvs_uml_switch.c:new_port:138:ctrl_fd=10 data_fd=5
+ 945:dvs_uml_switch.c:new_port_v1_v3:108:ctrl_fd=10 type=0 data_fd=5
+ 945:port.c:setup_sock_port:226:ctrl_fd=10 data_fd=5
+ 945:port.c:setup_port:153:ctrl_fd=10 
+New connection
+ 945:port.c:handle_tap_data:138:fd=6 hub=0
+ 945:port.c:handle_data:112:fd=6 hub=0 len=98
+ 945:port.c:match_tap:128:port_fd=10 data_fd=6
+ 945:port.c:match_tap:128:port_fd=8 data_fd=6
+ 945:port.c:match_tap:128:port_fd=6 data_fd=6
+ 945:port.c:update_src:48:control=6 
+ 945:port.c:send_dst:80:control=6 len=98 hub=0 
+ 945:port.c:send_sock:179:fd=10 data_fd=5 len=98 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=98 
+ 945:port.c:handle_sock_data:209:fd=5 hub=0
+ 945:port.c:handle_data:112:fd=5 hub=0 len=42
+ 945:port.c:match_sock:196:port_fd=10 data_fd=5
+ 945:port.c:update_src:48:control=10 
+ Addr: 26:87:73:20:03:60 New port 10
+ 945:port.c:send_dst:80:control=10 len=42 hub=0 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=42 
+ 945:tuntap.c:send_tap:8:fd=6 len=42 
+ 945:port.c:handle_sock_data:209:fd=5 hub=0
+ 945:port.c:handle_data:112:fd=5 hub=0 len=42
+ 945:port.c:match_sock:196:port_fd=10 data_fd=5
+ 945:port.c:update_src:48:control=10 
+ 945:port.c:send_dst:80:control=10 len=42 hub=0 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=42 
+ 945:tuntap.c:send_tap:8:fd=6 len=42 
+ 945:port.c:handle_sock_data:209:fd=5 hub=0
+ 945:port.c:handle_data:112:fd=5 hub=0 len=42
+ 945:port.c:match_sock:196:port_fd=10 data_fd=5
+ 945:port.c:update_src:48:control=10 
+ 945:port.c:send_dst:80:control=10 len=42 hub=0 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=42 
+ 945:tuntap.c:send_tap:8:fd=6 len=42 
+ 945:port.c:handle_sock_data:209:fd=5 hub=0
+ 945:port.c:handle_data:112:fd=5 hub=0 len=42
+ 945:port.c:match_sock:196:port_fd=10 data_fd=5
+ 945:port.c:update_src:48:control=10 
+ 945:port.c:send_dst:80:control=10 len=42 hub=0 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=42 
+ 945:tuntap.c:send_tap:8:fd=6 len=42 
+ 945:port.c:handle_sock_data:209:fd=5 hub=0
+ 945:port.c:handle_data:112:fd=5 hub=0 len=42
+ 945:port.c:match_sock:196:port_fd=10 data_fd=5
+ 945:port.c:update_src:48:control=10 
+ 945:port.c:send_dst:80:control=10 len=42 hub=0 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=42 
+ 945:tuntap.c:send_tap:8:fd=6 len=42 
+ 945:port.c:handle_sock_data:209:fd=5 hub=0
+ 945:port.c:handle_data:112:fd=5 hub=0 len=42
+ 945:port.c:match_sock:196:port_fd=10 data_fd=5
+ 945:port.c:update_src:48:control=10 
+ 945:port.c:send_dst:80:control=10 len=42 hub=0 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=42 
+ 945:tuntap.c:send_tap:8:fd=6 len=42 
+ 945:port.c:handle_sock_data:209:fd=5 hub=0
+ 945:port.c:handle_data:112:fd=5 hub=0 len=42
+ 945:port.c:match_sock:196:port_fd=10 data_fd=5
+ 945:port.c:update_src:48:control=10 
+ 945:port.c:send_dst:80:control=10 len=42 hub=0 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=42 
+ 945:tuntap.c:send_tap:8:fd=6 len=42 
+ 945:port.c:handle_sock_data:209:fd=5 hub=0
+ 945:port.c:handle_data:112:fd=5 hub=0 len=42
+ 945:port.c:match_sock:196:port_fd=10 data_fd=5
+ 945:port.c:update_src:48:control=10 
+ 945:port.c:send_dst:80:control=10 len=42 hub=0 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=42 
+ 945:tuntap.c:send_tap:8:fd=6 len=42 
+ 945:port.c:handle_sock_data:209:fd=5 hub=0
+ 945:port.c:handle_data:112:fd=5 hub=0 len=42
+ 945:port.c:match_sock:196:port_fd=10 data_fd=5
+ 945:port.c:update_src:48:control=10 
+ 945:port.c:send_dst:80:control=10 len=42 hub=0 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=42 
+ 945:tuntap.c:send_tap:8:fd=6 len=42 
+ 945:port.c:handle_sock_data:209:fd=5 hub=0
+ 945:port.c:handle_data:112:fd=5 hub=0 len=42
+ 945:port.c:match_sock:196:port_fd=10 data_fd=5
+ 945:port.c:update_src:48:control=10 
+ 945:port.c:send_dst:80:control=10 len=42 hub=0 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=42 
+ 945:tuntap.c:send_tap:8:fd=6 len=42 
+ 945:port.c:handle_sock_data:209:fd=5 hub=0
+ 945:port.c:handle_data:112:fd=5 hub=0 len=42
+ 945:port.c:match_sock:196:port_fd=10 data_fd=5
+ 945:port.c:update_src:48:control=10 
+ 945:port.c:send_dst:80:control=10 len=42 hub=0 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=42 
+ 945:tuntap.c:send_tap:8:fd=6 len=42 
+ 945:port.c:handle_sock_data:209:fd=5 hub=0
+ 945:port.c:handle_data:112:fd=5 hub=0 len=42
+ 945:port.c:match_sock:196:port_fd=10 data_fd=5
+ 945:port.c:update_src:48:control=10 
+ 945:port.c:send_dst:80:control=10 len=42 hub=0 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=42 
+ 945:tuntap.c:send_tap:8:fd=6 len=42 
+ 945:port.c:handle_tap_data:138:fd=6 hub=0
+ 945:port.c:handle_data:112:fd=6 hub=0 len=42
+ 945:port.c:match_tap:128:port_fd=10 data_fd=6
+ 945:port.c:match_tap:128:port_fd=8 data_fd=6
+ 945:port.c:match_tap:128:port_fd=6 data_fd=6
+ 945:port.c:update_src:48:control=6 
+ 945:port.c:send_dst:80:control=6 len=42 hub=0 
+ 945:port.c:send_sock:179:fd=10 data_fd=5 len=42 
+ 945:port.c:handle_sock_data:209:fd=5 hub=0
+ 945:port.c:handle_data:112:fd=5 hub=0 len=98
+ 945:port.c:match_sock:196:port_fd=10 data_fd=5
+ 945:port.c:update_src:48:control=10 
+ 945:port.c:send_dst:80:control=10 len=98 hub=0 
+ 945:tuntap.c:send_tap:8:fd=6 len=98 
+ 945:port.c:handle_tap_data:138:fd=6 hub=0
+ 945:port.c:handle_data:112:fd=6 hub=0 len=98
+ 945:port.c:match_tap:128:port_fd=10 data_fd=6
+ 945:port.c:match_tap:128:port_fd=8 data_fd=6
+ 945:port.c:match_tap:128:port_fd=6 data_fd=6
+ 945:port.c:update_src:48:control=6 
+ 945:port.c:send_dst:80:control=6 len=98 hub=0 
+ 945:port.c:send_sock:179:fd=10 data_fd=5 len=98 
+ 945:port.c:handle_sock_data:209:fd=5 hub=0
+ 945:port.c:handle_data:112:fd=5 hub=0 len=42
+ 945:port.c:match_sock:196:port_fd=10 data_fd=5
+ 945:port.c:update_src:48:control=10 
+ 945:port.c:send_dst:80:control=10 len=42 hub=0 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=42 
+ 945:tuntap.c:send_tap:8:fd=6 len=42 
+ 945:port.c:handle_sock_data:209:fd=5 hub=0
+ 945:port.c:handle_data:112:fd=5 hub=0 len=98
+ 945:port.c:match_sock:196:port_fd=10 data_fd=5
+ 945:port.c:update_src:48:control=10 
+ 945:port.c:send_dst:80:control=10 len=98 hub=0 
+ 945:tuntap.c:send_tap:8:fd=6 len=98 
+ 945:port.c:handle_tap_data:138:fd=6 hub=0
+ 945:port.c:handle_data:112:fd=6 hub=0 len=98
+ 945:port.c:match_tap:128:port_fd=10 data_fd=6
+ 945:port.c:match_tap:128:port_fd=8 data_fd=6
+ 945:port.c:match_tap:128:port_fd=6 data_fd=6
+ 945:port.c:update_src:48:control=6 
+ 945:port.c:send_dst:80:control=6 len=98 hub=0 
+ 945:port.c:send_sock:179:fd=10 data_fd=5 len=98 
+ 945:port.c:handle_sock_data:209:fd=5 hub=0
+ 945:port.c:handle_data:112:fd=5 hub=0 len=98
+ 945:port.c:match_sock:196:port_fd=10 data_fd=5
+ 945:port.c:update_src:48:control=10 
+ 945:port.c:send_dst:80:control=10 len=98 hub=0 
+ 945:tuntap.c:send_tap:8:fd=6 len=98 
+ 945:port.c:handle_tap_data:138:fd=6 hub=0
+ 945:port.c:handle_data:112:fd=6 hub=0 len=98
+ 945:port.c:match_tap:128:port_fd=10 data_fd=6
+ 945:port.c:match_tap:128:port_fd=8 data_fd=6
+ 945:port.c:match_tap:128:port_fd=6 data_fd=6
+ 945:port.c:update_src:48:control=6 
+ 945:port.c:send_dst:80:control=6 len=98 hub=0 
+ 945:port.c:send_sock:179:fd=10 data_fd=5 len=98 
+DEBUG 945:dvk_sendrec_T:944: ioctl ret=-1 errno=61
+DEBUG 945:dvk_sendrec_T:953: ioctl ret=-61
+ERROR: rmttap.c:rt_open_rmttap:200: rcode=-61
+DEBUG 945:dvk_receive_T:910: ioctl ret=-1 errno=61
+ERROR: rmttap.c:try_rmttap_open:265: rcode=-61
+ 947:rmttap.c:send_thread:336:RTAP1 rt_poll_idx=0
+ 947:rmttap.c:rt_send_write_packet:145:rt_name=RTAP1 wtype=2 len=90 rt_rmt_idx=-1
+ERROR: rmttap.c:rt_send_write_packet:148: rcode=-9
+ 947:rmttap.c:try_rmttap_open:254:nr_rmttap=2
+ 947:rmttap.c:try_rmttap_open:260:rt_index=0 rt_nodeid=1 rt_tap=tap1 rt_ctrl_fd=7 rt_data_fd=9 rt_poll_idx=0 rt_rmt_ep=-1 rt_rmt_idx=-1 rt_rmttap_fd=-1 rt_name=RTAP1
+ 947:rmttap.c:rt_open_rmttap:184:rt_index=0 rt_nodeid=1 rt_tap=tap1 rt_ctrl_fd=7 rt_data_fd=9 rt_poll_idx=0 rt_rmt_ep=-1 rt_rmt_idx=-1 rt_rmttap_fd=-1 rt_name=RTAP1
+DEBUG 945:dvk_getprocinfo:1177: dcid=0 p_nr=1 
+DEBUG 945:dvk_getprocinfo:1190: ioctl ret=0 errno=0
+DEBUG 945:dvk_getprocinfo:1195: ioctl ret=0
+ 947:rmttap.c:rt_open_rmttap:190:nr=1 endp=1 dcid=0 flags=1000 misc=0 lpid=-1 vpid=-1 nodeid=1 name=TAPserver01 
+ 947:rmttap.c:rt_open_rmttap:196:rt_ptr->rt_nodeid=1
+ 947:rmttap.c:rt_open_rmttap:197:SEND REQ_RT_OPEN REQUEST: source=30 type=1 m3i1=0 m3i2=0 m3p1=(nil) m3ca1=[tap1]
+DEBUG 945:dvk_sendrec_T:931: endpoint=1 timeout=30000
+DEBUG 945:dvk_receive_T:920: ioctl ret=-61
+ERROR: rmttap.c:recv_thread:433: rcode=-61
+DEBUG 945:dvk_receive_T:897: endpoint=31438 timeout=30000
+ 945:port.c:handle_sock_data:209:fd=5 hub=0
+ 945:port.c:handle_data:112:fd=5 hub=0 len=98
+ 945:port.c:match_sock:196:port_fd=10 data_fd=5
+ 945:port.c:update_src:48:control=10 
+ 945:port.c:send_dst:80:control=10 len=98 hub=0 
+ 945:tuntap.c:send_tap:8:fd=6 len=98 
+ 945:port.c:handle_tap_data:138:fd=6 hub=0
+ 945:port.c:handle_data:112:fd=6 hub=0 len=98
+ 945:port.c:match_tap:128:port_fd=10 data_fd=6
+ 945:port.c:match_tap:128:port_fd=8 data_fd=6
+ 945:port.c:match_tap:128:port_fd=6 data_fd=6
+ 945:port.c:update_src:48:control=6 
+ 945:port.c:send_dst:80:control=6 len=98 hub=0 
+ 945:port.c:send_sock:179:fd=10 data_fd=5 len=98 
+ 945:port.c:handle_sock_data:209:fd=5 hub=0
+ 945:port.c:handle_data:112:fd=5 hub=0 len=42
+ 945:port.c:match_sock:196:port_fd=10 data_fd=5
+ 945:port.c:update_src:48:control=10 
+ 945:port.c:send_dst:80:control=10 len=42 hub=0 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=42 
+ 945:tuntap.c:send_tap:8:fd=6 len=42 
+ 945:port.c:handle_sock_data:209:fd=5 hub=0
+ 945:port.c:handle_data:112:fd=5 hub=0 len=42
+ 945:port.c:match_sock:196:port_fd=10 data_fd=5
+ 945:port.c:update_src:48:control=10 
+ 945:port.c:send_dst:80:control=10 len=42 hub=0 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=42 
+ 945:tuntap.c:send_tap:8:fd=6 len=42 
+ 945:port.c:handle_tap_data:138:fd=6 hub=0
+ 945:port.c:handle_data:112:fd=6 hub=0 len=42
+ 945:port.c:match_tap:128:port_fd=10 data_fd=6
+ 945:port.c:match_tap:128:port_fd=8 data_fd=6
+ 945:port.c:match_tap:128:port_fd=6 data_fd=6
+ 945:port.c:update_src:48:control=6 
+ 945:port.c:send_dst:80:control=6 len=42 hub=0 
+ 945:port.c:send_sock:179:fd=10 data_fd=5 len=42 
+ 945:port.c:handle_sock_data:209:fd=5 hub=0
+ 945:port.c:handle_data:112:fd=5 hub=0 len=42
+ 945:port.c:match_sock:196:port_fd=10 data_fd=5
+ 945:port.c:update_src:48:control=10 
+ 945:port.c:send_dst:80:control=10 len=42 hub=0 
+ 945:tuntap.c:send_tap:8:fd=6 len=42 
+ 945:port.c:handle_sock_data:209:fd=5 hub=0
+ 945:port.c:handle_data:112:fd=5 hub=0 len=42
+ 945:port.c:match_sock:196:port_fd=10 data_fd=5
+ 945:port.c:update_src:48:control=10 
+ 945:port.c:send_dst:80:control=10 len=42 hub=0 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=42 
+ 945:tuntap.c:send_tap:8:fd=6 len=42 
+ 945:port.c:handle_sock_data:209:fd=5 hub=0
+ 945:port.c:handle_data:112:fd=5 hub=0 len=42
+ 945:port.c:match_sock:196:port_fd=10 data_fd=5
+ 945:port.c:update_src:48:control=10 
+ 945:port.c:send_dst:80:control=10 len=42 hub=0 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=42 
+ 945:tuntap.c:send_tap:8:fd=6 len=42 
+ 945:port.c:handle_tap_data:138:fd=6 hub=0
+ 945:port.c:handle_data:112:fd=6 hub=0 len=98
+ 945:port.c:match_tap:128:port_fd=10 data_fd=6
+ 945:port.c:match_tap:128:port_fd=8 data_fd=6
+ 945:port.c:match_tap:128:port_fd=6 data_fd=6
+ 945:port.c:update_src:48:control=6 
+ 945:port.c:send_dst:80:control=6 len=98 hub=0 
+ 945:port.c:send_sock:179:fd=10 data_fd=5 len=98 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=98 
+ 945:port.c:handle_sock_data:209:fd=5 hub=0
+ 945:port.c:handle_data:112:fd=5 hub=0 len=42
+ 945:port.c:match_sock:196:port_fd=10 data_fd=5
+ 945:port.c:update_src:48:control=10 
+ 945:port.c:send_dst:80:control=10 len=42 hub=0 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=42 
+ 945:tuntap.c:send_tap:8:fd=6 len=42 
+ 945:port.c:handle_sock_data:209:fd=5 hub=0
+ 945:port.c:handle_data:112:fd=5 hub=0 len=42
+ 945:port.c:match_sock:196:port_fd=10 data_fd=5
+ 945:port.c:update_src:48:control=10 
+ 945:port.c:send_dst:80:control=10 len=42 hub=0 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=42 
+ 945:tuntap.c:send_tap:8:fd=6 len=42 
+ 945:port.c:handle_sock_data:209:fd=5 hub=0
+ 945:port.c:handle_data:112:fd=5 hub=0 len=42
+ 945:port.c:match_sock:196:port_fd=10 data_fd=5
+ 945:port.c:update_src:48:control=10 
+ 945:port.c:send_dst:80:control=10 len=42 hub=0 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=42 
+ 945:tuntap.c:send_tap:8:fd=6 len=42 
+ 945:port.c:handle_sock_data:209:fd=5 hub=0
+ 945:port.c:handle_data:112:fd=5 hub=0 len=42
+ 945:port.c:match_sock:196:port_fd=10 data_fd=5
+ 945:port.c:update_src:48:control=10 
+ 945:port.c:send_dst:80:control=10 len=42 hub=0 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=42 
+ 945:tuntap.c:send_tap:8:fd=6 len=42 
+ 945:port.c:handle_sock_data:209:fd=5 hub=0
+ 945:port.c:handle_data:112:fd=5 hub=0 len=42
+ 945:port.c:match_sock:196:port_fd=10 data_fd=5
+ 945:port.c:update_src:48:control=10 
+ 945:port.c:send_dst:80:control=10 len=42 hub=0 
+ 945:port.c:send_sock:179:fd=8 data_fd=5 len=42 
+ 945:tuntap.c:send_tap:8:fd=6 len=42 
+Caught signal 2, cleaning up and exiting
+ 945:dvs_uml_switch.c:cleanup:21:
+ 945:rmttap.c:rmttap_cleanup:585:
+ 945:rmttap.c:rmttap_cleanup:591:dvk_unbind dcid=0 svr_ep=1 nodeid=1
+DEBUG 945:dvk_unbind_T:835: dcid=0 endpoint=1 timeout=-1
+DEBUG 945:dvk_unbind_T:848: ioctl ret=0 errno=4
+DEBUG 945:dvk_unbind_T:853: ioctl ret=0
+ 945:rmttap.c:rmttap_cleanup:596:dvk_unbind dcid=0 clt_ep=31 nodeid=1
+
+DEBUG 945:dvk_unbind_T:835: dcid=0 endpoint=31 timeout=-1
+DEBUG 945:dvk_unbind_T:848: ioctl ret=0 errno=0
+DEBUG 945:dvk_unbind_T:853: ioctl ret=0
+ 945:rmttap.c:rmttap_cleanup:591:dvk_unbind dcid=0 svr_ep=2 nodeid=2
+DEBUG 945:dvk_unbind_T:835: dcid=0 endpoint=2 timeout=-1
+DEBUG 945:dvk_unbind_T:848: ioctl ret=0 errno=0
+DEBUG 945:dvk_unbind_T:853: ioctl ret=0
+ 945:rmttap.c:rmttap_cleanup:596:dvk_unbind dcid=0 clt_ep=32 nodeid=2
+

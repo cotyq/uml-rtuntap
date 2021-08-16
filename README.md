@@ -8,6 +8,8 @@ User Mode Linux remote ethernet driver
 
 - uml_switch folder: correspond to /usr/src/dvs/dvs-apps/uml_switch
 
+- dvs_uml_switch folder: correspond to /usr/src/dvs/dvs-apps/dvs_uml_switch
+
 ## Virtual Machine configuration
 
 
@@ -17,7 +19,6 @@ Clone this code:
 
 ```
 git clone https://github.com/cotyq/uml-rtuntap.git
-
 cd uml-rtuntap
 ```
 
@@ -33,8 +34,8 @@ Mount the VM code in um and uml_switch folders:
 
 ```
 sshfs -o nonempty root@192.168.1.2:/usr/src/linux/arch/um um
-
 sshfs -o nonempty root@192.168.1.2:/usr/src/dvs/dvs-apps/uml_switch uml_switch
+sshfs -o nonempty root@192.168.1.2:/usr/src/dvs/dvs-apps/dvs_uml_switch dvs_uml_switch
 ```
 
 `update-vm` branch will contain the VM code and `master` will contain the git repository code.
